@@ -61,13 +61,13 @@ function Hamburger(size) {
     this.addModifier = function (modifier) {
         this.price += modifier.price;
         this.calories += modifier.calories;
-    }
-}
+    };
+};
   
 let hamburgerSmall = new Hamburger(Small);
 let hamburgerMedium = new Hamburger(Medium);
 let hamburgerBig = new Hamburger(Big);
-  
+
 hamburgerBig.addModifier(salad);
 hamburgerBig.addModifier(cheese);
 
